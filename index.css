@@ -1,0 +1,66 @@
+/* Global overrides and responsive helpers for SUVIDHA app */
+:root{
+  --container-max: 1120px;
+}
+
+html,body,#root{
+  height:100%;
+}
+
+body{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Make the main content comfortably scrollable on small screens */
+main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Scale down huge headings on small screens */
+@media (max-width: 768px){
+  h1, h2, h3 { font-size: 1.2rem; }
+  .text-7xl { font-size: 2.25rem; }
+  .text-6xl { font-size: 1.75rem; }
+  .text-5xl { font-size: 1.5rem; }
+  .h-\[32rem\] { height: auto; }
+  .h-\[70vh\] { height: 95vh; border-radius: 1rem; }
+  .grid-cols-3 { grid-template-columns: repeat(1, minmax(0,1fr)); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(1, minmax(0,1fr)); }
+  .md\:grid-cols-2 { grid-template-columns: repeat(1, minmax(0,1fr)); }
+  .p-16 { padding: 1.25rem; }
+  .p-12 { padding: 1rem; }
+  .rounded-\[3\.5rem\] { border-radius: 1rem; }
+}
+
+/* Accessibility helpers */
+button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid rgba(59,130,246,0.7);
+  outline-offset: 3px;
+}
+
+/* Assistant modal adjustments */
+.assistant-card {
+  width: 100%;
+  max-width: 960px;
+}
+
+@media (max-width: 640px){
+  .assistant-card { border-radius: 1rem; height: 95vh; margin: 0 0.5rem; }
+}
+
+/* Small tweaks for hidden file input clickable area */
+.upload-wrapper { position: relative; }
+.upload-wrapper input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+
+/* Prevent the kiosk buttons from overflowing */
+.large-button { min-height: 14rem; }
+
+/* Print styles for receipt */
+@media print {
+  /* Hide everything except the receipt */
+  body * { visibility: hidden; }
+  #suvidha-receipt, #suvidha-receipt * { visibility: visible; }
+  #suvidha-receipt { position: absolute; left: 0; top: 0; width: 100%; }
+}

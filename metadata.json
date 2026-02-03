@@ -1,0 +1,7 @@
+{
+  "name": "SUVIDHA - Smart Urban Digital Helpdesk Assistant",
+  "description": "A high-accessibility, kiosk-optimized digital helpdesk for unified civic utility services including electricity, gas, and municipal complaints.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
