@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="SUVIDHA" src="https://drive.google.com/file/d/1ZoKP2gCcgrB7JcfCXIZvvDlebqVMgtF_/view?usp=sharing" />
+<img width="1200" height="475" alt="SUVIDHA" />
 </div>
 
 **SUVIDHA** (Smart Urban Digital Helpdesk Assistant) is a public-facing, touch-based digital kiosk designed to act as a unified self-service platform for multiple civic utility departments.
